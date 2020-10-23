@@ -20,11 +20,12 @@ LIBS += -lpthread -lasound
 
 
 SOURCES += \
-    main.cpp \
-    mainwindow.cpp
+    MainWindow.cpp \
+    main.cpp
 
 HEADERS += \
-    mainwindow.h
+    AlsaUtils.h \
+    MainWindow.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

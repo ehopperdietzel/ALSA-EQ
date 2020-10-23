@@ -1,4 +1,6 @@
-#include "mainwindow.h"
+#ifndef ALSAUTILS_H
+#define ALSAUTILS_H
+
 #include <QDebug>
 #include <stdio.h>
 #include <stdlib.h>
@@ -342,24 +344,6 @@ void listdev(char *devname)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #define BUFFER_SIZE 1024
 void play()
 {
@@ -498,9 +482,7 @@ void play()
     exit (0);
 }
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-{
+/*
     qDebug() << "Is little endian:" << isLittleEndian();
 
     listdev((char*)"pcm");
@@ -510,9 +492,7 @@ MainWindow::MainWindow(QWidget *parent)
     //info((char *)"hw:0", SND_PCM_STREAM_CAPTURE);
     //info((char *)"hw:0", SND_PCM_STREAM_PLAYBACK);
     play();
-}
+*/
 
-MainWindow::~MainWindow()
-{
-}
 
+#endif // ALSAUTILS_H
