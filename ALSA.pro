@@ -20,12 +20,16 @@ LIBS += -lpthread -lasound
 
 
 SOURCES += \
+    AudioProcess.cpp \
     MainWindow.cpp \
+    SpectrumAnalyzer.cpp \
     main.cpp
 
 HEADERS += \
     AlsaUtils.h \
-    MainWindow.h
+    AudioProcess.h \
+    MainWindow.h \
+    SpectrumAnalyzer.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

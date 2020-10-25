@@ -8,6 +8,7 @@
 #include <locale.h>
 #include <alsa/asoundlib.h>
 
+
 bool isLittleEndian()
 {
     short int number = 0x1;
